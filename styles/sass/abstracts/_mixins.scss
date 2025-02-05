@@ -1,0 +1,16 @@
+@mixin respond-to($breakpointMax, $breakpointMin: null) {
+  @if $breakpointMin {
+    @media (min-width: map-get($breakpoints, $breakpointMin)) and (max-width: map-get($breakpoints, $breakpointMax)) {
+      @content;
+    }
+  } @else {
+    @media (max-width: map-get($breakpoints, $breakpointMax)) {
+      @content;
+    }
+  }
+}
+
+@mixin typography($size) {
+  font-size: map-get($font-sizes, $size);
+  line-height: map-get($line-heights, $size);
+}

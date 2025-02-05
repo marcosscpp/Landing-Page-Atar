@@ -1,0 +1,23 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $gray-200;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $green-500;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: $dark-cyan-600;
+  }
+}
+
+* {
+  scrollbar-color: $green-500 $gray-200;
+  scrollbar-width: thin;
+}

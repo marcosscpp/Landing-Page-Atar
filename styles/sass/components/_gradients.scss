@@ -1,0 +1,14 @@
+.gradient-text {
+  background: linear-gradient(270deg, $dark-cyan-600, $light-blue-200);
+  font: {
+    family: $display-font;
+    weight: 900;
+  }
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &::selection {
+    -webkit-text-fill-color: $white;
+  }
+}

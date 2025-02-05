@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-top: 2rem;
+  font: {
+    family: $primary-font;
+    size: 1.125rem;
+    weight: 700;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+    wrap: balance;
+  }
+  padding: 1.125rem 2.25rem;
+}
+
+.green-btn {
+  background: linear-gradient(90deg, $green-500, $dark-cyan-600);
+  box-shadow: 0 0 2.25rem 0.125rem rgba($neon-green-200, 0.3);
+  color: $white;
+}
