@@ -8,16 +8,16 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $green-500;
+  background: $green-cold-400;
   border-radius: 10px;
   transition: background 0.3s ease;
 
   &:hover {
-    background: $dark-cyan-600;
+    background: $teal-600;
   }
 }
 
 * {
-  scrollbar-color: $green-500 $gray-200;
+  scrollbar-color: $green-cold-400 $gray-200;
   scrollbar-width: thin;
 }

@@ -1,0 +1,27 @@
+.field {
+  &__error {
+  }
+
+  &__input {
+    background: $gray-800;
+    border: 1px solid $gray-300;
+    border-radius: 0.25rem;
+    color: $gray-100;
+    padding: 1rem 1rem;
+
+    
+    &.error {
+      border-color: $red-200;
+      box-shadow: 0 0 0.5rem rgba($red-200, 0.5);
+    }
+
+    &:focus {
+      border-color: $green-200;
+      outline: none;
+      box-shadow: 0 0 0.5rem rgba($green-cold-400, 0.5);
+    }
+  }
+
+  &__select {
+  }
+}

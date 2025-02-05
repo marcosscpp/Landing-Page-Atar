@@ -1,0 +1,25 @@
+.registration {
+  background: url("#{$image-path}/circuit.png") no-repeat center -5px;
+  
+
+  &__header {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

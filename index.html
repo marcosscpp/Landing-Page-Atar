@@ -42,8 +42,61 @@
         <img src="./assets/images/futuristic-cyberpunk-astronaut-helmet-with-a-sleek.png" alt="Um capacete de astronauta cyberpunk futurista com um design elegante.">
       </div>
     </section>
-    <section class="registration" id="cadastro">
+    <div class="stripe-slider slider">
 
+    </div>
+    <section class="registration" id="cadastro">
+      <div class="registration__container container">
+        <header class="registration__header">
+          <h1 class="registration__title">Conheça a assessoria de Growth Marketing capaz de <strong>triplicar o faturamento</strong> da sua empresa</h1>
+          <h1 class="registration__subtitle">Preencha o formulário abaixo que um dos nossos especialistas entrará em contato com a sua empresa para agendar a sua <strong>assessoria gratuita</strong></h1>
+        </header>
+        <form class="registration__form">
+          <div class="registration__field field">
+            <label class="field__label" for="name">Nome:</label>
+            <input class="field__input" type="text" id="name" name="name" required />
+            <span class="field__error"></span>
+          </div>
+
+          <div class="registration__field field">
+            <label class="field__label" for="email">Email:</label>
+            <input class="field__input" type="email" id="email" name="email" required />
+            <span class="field__error"></span>
+          </div>
+
+          <div class="registration__field field">
+            <label class="field__label" for="whatsapp">WhatsApp:</label>
+            <input class="field__input" type="tel" id="whatsapp" name="whatsapp" required />
+            <span class="field__error"></span>
+          </div>
+
+          <div class="registration__field field">
+            <label class="field__label" for="company">Empresa:</label>
+            <input class="field__input" type="text" id="company" name="company" required />
+            <span class="field__error"></span>
+          </div>
+
+          <div class="registration__field field">
+            <label class="field__label" for="socialMedia">Rede Social ou Site da Empresa:</label>
+            <input class="field__input" type="text" id="socialMedia" name="socialMedia" required />
+            <span class="field__error"></span>
+          </div>
+
+          <div class="registration__field field">
+            <label class="field__label" for="revenue">Selecione seu Faturamento Mensal:</label>
+            <select class="field__select" name="revenue" id="revenue">
+              <option value="">--Selecione uma opção--</option>
+              <option value="Até 100.000">Até R$100.000</option>
+              <option value="De R$100.001 a R$500.000">De R$100.001 a R$500.000</option>
+              <option value="De R$500.001 a R$1.000.000">De R$500.001 a R$1.000.000</option>
+              <option value="Acima de R$1.000.000">Acima de R$1.000.000</option>
+            </select>
+            <span class="field__error"></span>
+          </div>
+
+          <button type="submit" class="btn green-btn">Quero uma análise gratuita do meu negócio</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer"></footer>
