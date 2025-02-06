@@ -1,15 +1,23 @@
 .field {
-  &__error {
+  &__label {
+    color: $gray-100;
+    font: {
+      family: $primary-font;
+      size: 1.25rem;
+      weight: 300;
+    }
+    margin-bottom: 0.5rem;
   }
 
-  &__input {
+  &__input,
+  &__select {
     background: $gray-800;
-    border: 1px solid $gray-300;
+    border: 1px solid $gray-700;
     border-radius: 0.25rem;
     color: $gray-100;
-    padding: 1rem 1rem;
+    font-size: 0.875rem;
+    padding: .75rem 1rem;
 
-    
     &.error {
       border-color: $red-200;
       box-shadow: 0 0 0.5rem rgba($red-200, 0.5);
@@ -17,11 +25,22 @@
 
     &:focus {
       border-color: $green-200;
-      outline: none;
       box-shadow: 0 0 0.5rem rgba($green-cold-400, 0.5);
+      outline: none;
     }
   }
 
-  &__select {
+  &__error {
+    color: $red-200;
+    display: none ;
+    font-size: 1rem;
+    margin: {
+      left: 1rem;
+      top: 0.5rem;
+    }
+
+    &.active {
+      display: block;
+    }
   }
 }
