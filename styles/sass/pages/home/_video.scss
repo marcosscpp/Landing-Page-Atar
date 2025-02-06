@@ -1,0 +1,24 @@
+.video {
+  text-align: center;
+  &__container {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: 60rem;
+  }
+
+  &__header {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: 50rem;
+  }
+
+  &__wrapper {
+    #smartplayer {
+      border-radius: 1.25rem !important;
+    }
+  }
+}

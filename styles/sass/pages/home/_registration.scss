@@ -2,25 +2,15 @@
   background: url("#{$image-path}/circuit.png") no-repeat center -0.25rem / 90%;
 
   &__header {
-    color: $gray-200;
-    margin: {
-      left: auto;
-      right: auto;
-      top: 4rem;
-      bottom: 2.5rem;
-    }
+    color: $gray-100;
+    margin: 2.5rem auto;
     padding: 0 1.5rem;
     max-width: 47rem;
-    text-align: center;
   }
 
   &__title {
     font-family: $primary-font;
     font-weight: 600;
-  }
-
-  strong {
-    color: $gray-100;
   }
 
   &__form {
@@ -44,5 +34,23 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+@mixin registration-md {
+  .registration {
+    background: none;
+
+    &__header {
+      margin-top: 0;
+      text-wrap: balance;
+    }
+
+    &__form {
+      padding: {
+        left: 2.25rem;
+        right: 2.25rem;
+      }
+    }
   }
 }

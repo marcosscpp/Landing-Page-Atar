@@ -9,6 +9,7 @@
 }
 body {
   -webkit-font-smoothing: antialiased;
+  color: $gray-50;
   overflow-x: hidden;
 }
 
@@ -55,5 +56,12 @@ ul {
 
 main {
   overflow: hidden;
-  background: linear-gradient(0deg, $gray-900, $gray-700);
+  background: linear-gradient(0deg, $gray-950, $gray-700);
+}
+
+hr {
+  border: 1px solid $gray-600;
+  height: 2px;
+  margin: 2rem auto;
+  width: 20%;
 }

@@ -1,3 +1,11 @@
 @include respond-to("lg") {
   @include hero-lg;
 }
+
+@include respond-to("md") {
+  @include registration-md;
+}
+
+@include respond-to("sm") {
+  @include hero-sm;
+}
