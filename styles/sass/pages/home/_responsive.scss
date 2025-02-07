@@ -1,5 +1,6 @@
 @include respond-to("lg") {
   @include hero-lg;
+  @include numbers-lg;
 }
 
 @include respond-to("md") {
@@ -8,4 +9,5 @@
 
 @include respond-to("sm") {
   @include hero-sm;
+  @include services-sm;
 }

@@ -1,0 +1,60 @@
+.services {
+  &__container {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    max-width: 58rem;
+  }
+
+  &__title {
+    color: $gray-25;
+    font-family: $primary-font;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+.service {
+  align-items: flex-start;
+  background-color: $gray-900;
+  box-shadow: 0 0 20px rgba($gray-500, 0.05);
+  border-radius: 0.25rem;
+  display: flex;
+  gap: 0.5rem 1.5rem;
+  font-family: $primary-font;
+  flex-direction: column;
+  flex: 1;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  padding: 1.25rem;
+  padding-right: 3rem;
+
+  &__icon {
+    width: 1.5rem;
+  }
+}
+
+@mixin services-sm {
+  .services {
+    &__list {
+      flex-direction: column;
+    }
+  }
+
+  .service {
+    align-items: center;
+    font-size: 1.625rem;
+    padding: 2rem;
+    flex-direction: row;
+
+    &__icon {
+      width: 2.5rem;
+    }
+  }
+}

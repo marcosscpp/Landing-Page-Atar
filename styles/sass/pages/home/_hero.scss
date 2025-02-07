@@ -13,7 +13,6 @@
     size: cover;
   }
   display: flex;
-  flex-wrap: wrap;
   gap: 5rem;
   justify-content: space-between;
   min-height: 100vh;
@@ -73,6 +72,7 @@
       ),
       url("#{$image-path}/futuristic-chart.jpeg");
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     padding-top: 3rem;
     &__content {
@@ -84,7 +84,6 @@
       width: 90%;
       margin-left: auto;
     }
-
 
     &__logo,
     &__arrow {
