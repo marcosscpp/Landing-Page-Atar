@@ -102,6 +102,17 @@
 
 @mixin hero-sm {
   .hero {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: calc(100vh - 7rem);
+    }
+
+    &__headline, &__subheadline {
+      text-wrap: balance;
+    }
+    
     &__headline {
       font-size: 2rem;
     }
