@@ -48,44 +48,50 @@
     <section class="registration">
       <div class="registration__container container">
         <header class="registration__header">
-          <h1 class="registration__title title text-md">Conheça a assessoria de Growth Marketing capaz de <strong>triplicar o faturamento</strong> da sua empresa</h1>
-          <p class="registration__subtitle description text-sm">Preencha o formulário abaixo que um dos nossos especialistas entrará em contato com a sua empresa para agendar a sua <strong>assessoria gratuita</strong></p>
+          <h1 class="registration__title title text-md">
+            Conheça a assessoria de Growth Marketing capaz de
+            <strong>triplicar o faturamento</strong> da sua empresa
+          </h1>
+          <p class="registration__subtitle description text-sm">
+            Preencha o formulário abaixo que um dos nossos especialistas entrará em contato com a sua empresa para agendar a sua
+            <strong>assessoria gratuita</strong>
+          </p>
         </header>
 
-        <form class="registration__form" id="cadastro">
+        <form class="registration__form" id="cadastro" data-form>
           <div class="registration__field field">
             <label class="field__label" for="name">Nome</label>
-            <input class="field__input" type="text" id="name" name="name" required />
+            <input class="field__input" type="text" id="name" name="name" placeholder="Ex: João Silva" required />
             <span class="field__error"></span>
           </div>
 
           <div class="registration__field field">
             <label class="field__label" for="email">Email</label>
-            <input class="field__input" type="email" id="email" name="email" required />
+            <input class="field__input" type="email" id="email" name="email" placeholder="Ex: joao@email.com" required />
             <span class="field__error"></span>
           </div>
 
           <div class="registration__field field">
-            <label class="field__label" for="whatsapp">WhatsApp</label>
-            <input class="field__input" type="tel" id="whatsapp" name="whatsapp" required />
+            <label class="field__label" for="phone">WhatsApp</label>
+            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Ex: (11) 98765-4321" required />
             <span class="field__error"></span>
           </div>
 
           <div class="registration__field field">
             <label class="field__label" for="company">Empresa</label>
-            <input class="field__input" type="text" id="company" name="company" required />
+            <input class="field__input" type="text" id="company" name="company" placeholder="Ex: Minha Empresa LTDA" required />
             <span class="field__error"></span>
           </div>
 
           <div class="registration__field field">
             <label class="field__label" for="socialMedia">Rede Social ou Site da Empresa</label>
-            <input class="field__input" type="text" id="socialMedia" name="socialMedia" required />
+            <input class="field__input" type="text" id="socialMedia" name="socialMedia" placeholder="Ex: www.minhaempresa.com ou @minhaempresa" required />
             <span class="field__error"></span>
           </div>
 
           <div class="registration__field field">
             <label class="field__label" for="revenue">Selecione seu Faturamento Mensal</label>
-            <select class="field__select" name="revenue" id="revenue">
+            <select class="field__select" name="revenue" id="revenue" required>
               <option value="">--Selecione uma opção--</option>
               <option value="Até 100.000">Até R$100.000</option>
               <option value="De R$100.001 a R$500.000">De R$100.001 a R$500.000</option>
@@ -95,7 +101,9 @@
             <span class="field__error"></span>
           </div>
 
-          <button type="submit" class="btn green-btn">Quero uma análise gratuita do meu negócio</button>
+          <button type="submit" class="btn green-btn">
+            Quero uma análise gratuita do meu negócio
+          </button>
         </form>
       </div>
     </section>
@@ -151,27 +159,43 @@
         <div class="numbers__container">
           <p class="numbers__subtitle description text-md">Especializamo-nos em <strong class="green-text">impulsionar vendas e lucros</strong> de forma segura e previsível, utilizando estratégias de Growth Marketing aprimoradas por mais de uma década.</p>
         </div>
-        <ul class="numbers__list">
+        <ul class="numbers__list" data-aos="fade-up" data-aos-duration="500">
           <li class="number">
             <img class="number__shape" src="./assets/icons/hexagon.svg" alt="">
-            <h3><span data-number="">342</span></h3>
+            <h3><span data-number>342</span></h3>
             <p><strong>empresas atendidas</strong> de diversos nichos</p>
           </li>
           <li class="number">
             <img class="number__shape" src="./assets/icons/hexagon.svg" alt="">
-            <h3><span data-number="">248</span></h3>
+            <h3><span data-number>248</span></h3>
             <p><strong>milhões</strong> de reais gerados em vendas</p>
           </li>
           <li class="number">
             <img class="number__shape" src="./assets/icons/hexagon.svg" alt="">
-            <h3><span data-number="">11</span></h3>
+            <h3><span data-number>11</span></h3>
             <p>anos de experiência no mercado digital</p>
           </li>
         </ul>
       </section>
     </div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__content">
+      <img class="footer__logo" src="./assets/images/logo-atar-digital.svg" alt="Atar Inteligência Digital">
+      <div class="footer__social-media">
+        <span class="footer__social-media-message">Siga nos</span>
+        <a class="footer__social-media-link" href="https://www.instagram.com/atardigital/"><img class="footer__social-media-icon" src="./assets/icons/instagram.svg" alt="Instagram da Atar"></a>
+        <a class="footer__social-media-link" href="https://www.facebook.com/people/Atar-Digital/100089314117165/"><img class="footer__social-media-icon" src="./assets/icons/facebook.svg" alt="Facebook da Atar"></a>
+        <a class="footer__social-media-link" href="https://www.linkedin.com/company/atar-digital/"><img class="footer__social-media-icon" src="./assets/icons/linkedin.svg" alt="Linkedin da Atar"></a>
+      </div>
+      <div class="footer__contact">
+        <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/email.svg" alt="">contato@atardigital.com.br</span>
+        <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/phone.svg" alt="">(11) 94582-6939</span>
+        <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/location.svg" alt="">Alto de Pinheiros - São Paulo</span>
+      </div>
+    </div>
+    <p class="footer__copyright">@Atar Digital 2024. Todos os direitos reservados</p>
+  </footer>
 </body>
 
 </html>
