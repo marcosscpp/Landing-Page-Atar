@@ -1,0 +1,66 @@
+.clients {
+  background: $gray-900;
+  padding: 1rem 0;
+  &__container {
+    max-width: 70rem;
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__list {
+    animation: scroll-image 30s linear infinite;
+    gap: 7rem;
+    margin-top: 2rem;
+  }
+
+  &__slider {
+    overflow: hidden;
+    max-width: 60rem;
+    margin: 0 auto;
+
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+  }
+
+  &__item {
+    flex: 0 1 auto;
+  }
+
+  &__image {
+    height: 6rem;
+    width: 11rem;
+    object-fit: contain;
+  }
+}
+
+@keyframes scroll-image {
+  to {
+    transform: translate(calc(-50% - 4.25rem));
+  }
+}
+
+@mixin clients-sm {
+  .clients {
+    &__list {
+      gap: 4rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -12,6 +12,7 @@
 @include respond-to("sm") {
   @include hero-sm;
   @include services-sm;
+  @include clients-sm;
   @include footer-sm;
 }
 

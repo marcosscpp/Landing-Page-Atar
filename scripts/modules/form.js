@@ -1,6 +1,7 @@
 import { validateCompleteName, validatePhone } from "../utils/validate.js";
 import debounce from "../utils/debounce.js";
 import Toast from "../utils/toast.js";
+import triggerEvent from "./triggerEvent.js";
 
 const toast = new Toast();
 
@@ -71,7 +72,12 @@ export default class BasicForm {
       });
 
       try {
-        const rdResponse = await fetch("../php/rd-crm-submit.php", {
+        const metaApiResponse = await fetch("./php/pixel-submit.php", {
+          method: "POST",
+          body: formData,
+        });
+
+        const rdResponse = await fetch("./php/rd-submit.php", {
           method: "POST",
           body: formData,
         });
@@ -81,7 +87,7 @@ export default class BasicForm {
         if (result.erro) {
           toast.createToast(result.errorMessage, "error");
         } else {
-          const url = "https://atardigital.com.br/obrigado";
+          const url = "https://atardigital.com.br/proximos-passos";
           toast.createToast("Formulário enviado com sucesso!", "success");
           this.formElement.reset();
           window.open(url, "_blank");

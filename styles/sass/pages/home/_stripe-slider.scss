@@ -1,4 +1,30 @@
-// .stripe-slider {
-//   background: linear-gradient(90deg, $teal-600, $blue-deep-700);
-//   height: 8rem;
-// }
+.slider {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: max-content;
+}
+
+.stripe-slider {
+  background: linear-gradient(90deg, $teal-600, $blue-deep-700);
+  height: 8rem;
+
+  &__list {
+    animation: scroll-text 15s linear infinite;
+    gap: 7.5rem;
+  }
+
+  &__item {
+    font-family: $display-font;
+    font-size: 1.75rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+}
+
+@keyframes scroll-text {
+  to {
+    transform: translate(calc(-50% - 4.375rem));
+  }
+}

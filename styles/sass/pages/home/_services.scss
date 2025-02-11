@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
   }
 }
 
@@ -44,8 +45,9 @@
 
   &__text {
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.1;
+    text-wrap: balance;
     width: 80%;
   }
 
@@ -87,7 +89,5 @@
     &__list {
       grid-template-columns: 1fr;
     }
-  }
-  .service {
   }
 }

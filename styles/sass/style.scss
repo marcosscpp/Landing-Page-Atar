@@ -13,12 +13,10 @@
 @import "./base/scrollbar";
 @import "./base/selection";
 
-
 /********************
 ** uUtilities **
 */
 @import "./utilities/text";
-
 
 /********************
 ** Components **
@@ -43,4 +41,5 @@
 @import "./pages/home/pros";
 @import "./pages/home/numbers";
 @import "./pages/home/services";
+@import "./pages/home/clients";
 @import "./pages/home/responsive";
