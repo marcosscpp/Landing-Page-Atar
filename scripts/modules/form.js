@@ -65,10 +65,10 @@ export default class BasicForm {
       const formData = new FormData(form);
 
       // Google UTM Params
-      // const param = new URLSearchParams(window.location.search);
-      // param.forEach((value, key) => {
-      //   formData.set(key, value);
-      // });
+      const param = new URLSearchParams(window.location.search);
+      param.forEach((value, key) => {
+        formData.set(key, value);
+      });
 
       try {
         const rdResponse = await fetch("../php/rd-crm-submit.php", {
@@ -81,7 +81,7 @@ export default class BasicForm {
         if (result.erro) {
           toast.createToast(result.errorMessage, "error");
         } else {
-          const url = "https://chat.whatsapp.com/IDOQ0PFNsQ3Apne7Q8k2uS";
+          const url = "https://atardigital.com.br/obrigado";
           toast.createToast("Formulário enviado com sucesso!", "success");
           this.formElement.reset();
           window.open(url, "_blank");

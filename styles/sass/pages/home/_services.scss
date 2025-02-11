@@ -1,60 +1,93 @@
 .services {
+  background-color: $gray-25;
+  color: $gray-950;
+  text-align: center;
+  padding: 1rem 0;
+
   &__container {
-    margin: {
-      left: auto;
-      right: auto;
-    }
-    max-width: 58rem;
+    max-width: 85rem;
   }
 
-  &__title {
-    color: $gray-25;
-    font-family: $primary-font;
+  &__description {
+    color: $gray-900;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 4rem;
-    margin-bottom: 2.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
   }
 }
 
 .service {
-  align-items: flex-start;
-  background-color: $gray-900;
-  box-shadow: 0 0 20px rgba($gray-500, 0.05);
-  border-radius: 0.25rem;
-  display: flex;
-  gap: 0.5rem 1.5rem;
-  font-family: $primary-font;
-  flex-direction: column;
-  flex: 1;
-  font-size: 1.25rem;
-  text-transform: capitalize;
-  padding: 1.25rem;
-  padding-right: 3rem;
+  box-shadow: 0.625rem 0.625rem $gray-900;
+  height: 12rem;
+  transition: 0.2s all;
+  position: relative;
+  overflow: hidden;
 
-  &__icon {
-    width: 1.5rem;
+  &__title {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    width: 100%;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    width: 80%;
+  }
+
+  &__text,
+  &__title {
+    color: $gray-25;
+    font-family: $primary-font;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: $teal-600;
+    transition: all 1s ease;
+  }
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0;
+    transform: translate(0.625rem, 0.625rem);
+  }
+
+  &:hover &__layer,
+  &:active &__layer {
+    left: 0;
   }
 }
 
-@mixin services-sm {
+@mixin services-lg {
   .services {
     &__list {
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
-
   .service {
-    align-items: center;
-    font-size: 1.625rem;
-    padding: 2rem;
-    flex-direction: row;
-
-    &__icon {
-      width: 2.5rem;
-    }
   }
 }

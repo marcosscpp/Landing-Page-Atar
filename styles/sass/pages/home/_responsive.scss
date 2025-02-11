@@ -1,6 +1,7 @@
 @include respond-to("lg") {
   @include hero-lg;
   @include numbers-lg;
+  @include services-lg;
   @include footer-lg;
 }
 

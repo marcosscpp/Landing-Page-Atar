@@ -5,6 +5,6 @@ import BasicForm from "./modules/form";
 import initAnimeNumbers from "./modules/anime-numbers.js";
 
 const smoothScroll = new SmoothScroll("a[href^='#']").init();
-AOS.init({ once: true });
+AOS.init();
 const basicForm = new BasicForm("[data-form]");
 initAnimeNumbers();
