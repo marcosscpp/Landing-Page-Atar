@@ -16,10 +16,49 @@
   <script type="module" src="./scripts/script.js" defer></script>
   <!-- End Custom CSS + JS -->
 
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '432757525788271');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-MG3KNMTV");
+  </script>
+  <!-- End Google Tag Manager -->
+
+
   <title>Atar Digital - Growth Marketing 5.0</title>
 </head>
 
 <body>
+  <!-- noscript GTM and Pixel -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG3KNMTV" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=432757525788271&ev=PageView&noscript=1" /></noscript>
+  <!-- end noscript GTM and Pixel -->
   <main>
     <section class="hero">
       <div class="hero__content">
@@ -89,7 +128,7 @@
 
           <div class="registration__field field">
             <label class="field__label" for="phone">WhatsApp</label>
-            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Ex: (11) 98765-4321" required />
+            <input class="field__input" type="tel" id="phone" name="phone" placeholder="Ex: +55 (11) 98765-4321" required />
             <span class="field__error"></span>
           </div>
 
@@ -351,7 +390,7 @@
       </div>
       <div class="footer__contact">
         <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/email.svg" alt="">contato@atardigital.com.br</span>
-        <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/phone.svg" alt="">(11) 94582-6939</span>
+        <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/phone.svg" alt="">(11) 94589-7629</span>
         <span class="footer__contact-item"><img class="footer__contact-icon" src="./assets/icons/location.svg" alt="">Alto de Pinheiros - São Paulo</span>
       </div>
     </div>

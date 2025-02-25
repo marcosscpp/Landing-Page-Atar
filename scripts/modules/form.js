@@ -134,12 +134,21 @@ export default class BasicForm {
     this.formElement.querySelectorAll("[type='tel']").forEach((tel) => {
       tel.addEventListener("input", (e) => {
         let formattedNumber = e.target.value.replace(/\D/g, "");
-        if (formattedNumber.length > 11) {
-          formattedNumber = formattedNumber.slice(0, 11);
+        
+        if (formattedNumber.length > 13) {
+          formattedNumber = formattedNumber.slice(0, 13);
         }
-        formattedNumber = formattedNumber.replace(/^(\d{2})(\d)/g, "($1) $2");
-        formattedNumber = formattedNumber.replace(/(\d)(\d{4})$/, "$1-$2");
-
+        
+        if (formattedNumber.length > 2) {
+          const ddi = formattedNumber.slice(0, 2);
+          const restOfNumber = formattedNumber.slice(2);
+          
+          let formatted = restOfNumber.replace(/^(\d{2})(\d)/g, "($1) $2");
+          formatted = formatted.replace(/(\d)(\d{4})$/, "$1-$2");
+          
+          formattedNumber = `+${ddi} ${formatted}`;
+        }
+        
         e.target.value = formattedNumber;
       });
     });

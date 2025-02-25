@@ -19,6 +19,7 @@
 
   &__content {
     max-width: 36rem;
+    padding: 3rem 0;
     margin-left: 11rem;
   }
 
@@ -109,10 +110,11 @@
       min-height: calc(100vh - 7rem);
     }
 
-    &__headline, &__subheadline {
+    &__headline,
+    &__subheadline {
       text-wrap: balance;
     }
-    
+
     &__headline {
       font-size: 2rem;
     }
